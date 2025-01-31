@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Responsive Website</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <!-- Navigation Bar -->
+      <div class="logo">Logo</div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+      <!-- Add this inside the <nav> element -->
+    <div class="mobile-menu">
+        <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#features">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <h1>Welcome to Our Website</h1>
+        <p>Experience the best products and services.</p>
+        <a href="#" class="btn">Get Started</a>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="feature-card">
+        <div class="card-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <img src="https://picsum.photos/200/300" alt="Feature Image 1">
+        <h3>Best in class Animations</h3>
+        <p>We do have the best animators to add cool digital assets.</p>
+        <a href="#" class="learn-more">Learn More</a>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-icon">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <img src="https://picsum.photos/300/300" alt="Feature Image 2">
+        <h3>Content Curation</h3>
+        <p>Our expert content curation team will get the script to sell your products.</p>
+        <a href="#" class="learn-more">Learn More</a>
+      </div>
+
+      <div class="feature-card">
+        <div class="card-icon">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <img src="https://picsum.photos/400/300" alt="Feature Image 3">
+        <h3>Digital Marketing</h3>
+        <p>Experts in SEO, SEM ready to drive your business.</p>
+        <a href="#" class="learn-more">Learn More</a>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Name" id="name">
+        <input type="email" placeholder="Email" id="email">
+        <textarea placeholder="Message" id="message"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Abhay's Web Shop. (c)All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

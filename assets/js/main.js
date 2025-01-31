@@ -1,24 +1,5 @@
-// main.js
-
 // Smooth Scrolling Navigation
-const navLinks = document.querySelectorAll('nav a');
-
-navLinks.forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    const targetId = e.currentTarget.getAttribute('href');
-    const targetElement = document.querySelector(targetId);
-
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop,
-        behavior: 'smooth'
-      });
-    } else {
-      console.error(`Element with ID "${targetId}" not found.`);
-    }
-  });
-});
+console.log('JavaScript file loaded');
 
 // Form Validation
 const form = document.querySelector('.contact-form');
@@ -80,24 +61,43 @@ function isValidEmail(email) {
 
 // Mobile Menu Toggle
 const menuToggle = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.menu');
+const mobileMenu = document.querySelector('.mobile-menu');
+mobileMenu.style.display = 'none';
 
 menuToggle.addEventListener('click', () => {
-  menu.classList.toggle('show');
+  menuToggle.classList.toggle('fa-bars');
+  menuToggle.classList.toggle('fa-times');
+  mobileMenu.style.display = mobileMenu.style.display === 'flex' ? 'none' : 'flex';
 });
 
-// Feature Card Animation
-const featureCards = document.querySelectorAll('.feature-card');
+// Smooth Scrolling Navigation
+const navLinks = document.querySelectorAll('nav a, .mobile-menu a');
 
-window.addEventListener('scroll', () => {
-  featureCards.forEach(card => {
-    const cardPosition = card.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
+navLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const targetId = e.currentTarget.getAttribute('href').slice(1); // Remove the '#' symbol
 
-    if (cardPosition < windowHeight * 0.8) {
-      card.classList.add('animate');
+    if (targetId === '') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
-      card.classList.remove('animate');
+      const targetElement = document.getElementById(targetId); // Use getElementById instead of querySelector
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+        });
+      } else {
+        console.error(`Element with ID "${targetId}" not found.`);
+      }
+    }
+
+    // Close mobile menu after clicking a link
+    if (mobileMenu.style.display === 'flex') {
+      menuToggle.classList.toggle('fa-bars');
+      menuToggle.classList.toggle('fa-times');
+      mobileMenu.style.display = 'none';
     }
   });
 });
