@@ -272,7 +272,7 @@ The mobile menu doesn't close when clicking outside, and the form submission doe
 
 ###Overall Comparison
 
-| Metric    | V1 (3) | V2 (3.5) | V3 (R1)|
+| Metric    | V1 (3.5) | V2 (3) | V3 (R1)|
 | -------- | ------- | -------- | -------- |
 | Total Dev Time  | 4 hours  | 3 hours | 3 hours |
 | # of iterations required | 49 | 42 | 45 |
