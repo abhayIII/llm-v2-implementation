@@ -273,5 +273,5 @@ The mobile menu doesn't close when clicking outside, and the form submission doe
 | Total Dev Time  | 4 hours  | 3 hours | 3 hours |
 | # of iterations required | 49 | 42 | 45 |
 | Bug fix success rate    | 100% | <100% | 100% |
-| Code Quality Metrics    |   8/10  | 7/10 | 7.4/10 |
+| Code Quality Metrics    |   8/10  | 5.5/10 | 7.4/10 |
 
