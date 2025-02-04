@@ -260,10 +260,6 @@ The feature cards section needs improvement. Each card should:
 Update the HTML, CSS, and JavaScript accordingly.
 ```
 
-- This step required a lot of to and fro which is visible in the chat. It took a lot of iterations and RCAs to fix the hover over feature cards.
-- At one point, I tried sharing the image of the frontend to explain the issue when I realized that Deepseek-r1 doesn't support image reading.
-- Even then explaining the issues on the frontend and catching errors in the console helped the LLM to correctly fix the issues.
-
 ### Step 5: Bug Fixing
 **Problem-Solving Prompt:**
 ```
