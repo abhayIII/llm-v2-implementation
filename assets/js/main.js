@@ -62,6 +62,7 @@ function isValidEmail(email) {
 // Mobile Menu Toggle
 const menuToggle = document.querySelector('.menu-toggle');
 const mobileMenu = document.querySelector('.mobile-menu');
+// Add this line to ensure the mobile menu is hidden initially
 mobileMenu.style.display = 'none';
 
 menuToggle.addEventListener('click', () => {
